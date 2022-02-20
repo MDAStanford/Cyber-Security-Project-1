@@ -4,8 +4,14 @@ Microsoft Azure Elk Stack Design &amp; Deployment
 The files in this repository were used to configure the network depicted
 below.
 
+![image](https://user-images.githubusercontent.com/99157857/154829697-4c7e2bf9-6a16-4651-9d17-14c3407534a7.png)
 
-[PROJECT 1 CLOUD.drawio.pdf](https://github.com/MDAStanford/Cyber-Security-Project-1/files/8103424/PROJECT.1.CLOUD.drawio.pdf)
+
+
+
+
+
+
 
 
 
