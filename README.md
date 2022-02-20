@@ -36,7 +36,7 @@ may be used to install only certain pieces of it, such as FileBeat.
 
 
 This document contains the following details: - Description of the
-Topologu - Access Policies - ELK Configuration - Beats in Use - Machines
+Topology - Access Policies - ELK Configuration - Beats in Use - Machines
 Being Monitored - How to Use the Ansible Build
 
 ### Description of the Topology
@@ -54,13 +54,17 @@ in addition to restricting traffic to the network. -
 
 
 
-*TODO: What aspect of security do load balancers protect? load balancers protect against DDos attacks. 
+What aspect of security do load balancers protect? 
+
+Load balancers protect against DDos attacks. 
 
 
 
 
 
-What is the advantage of a jump box?* the advantage of the JumpBox file is that it's a single point of entry that can be monitored and protected. 
+What is the advantage of a jump box?
+
+The advantage of the JumpBox file is that it's a single point of entry that can be monitored and protected. 
 
 
  
@@ -73,17 +77,14 @@ VMs for changes to the  LOGS  and system TRAFFIC.
 
 
 
-*TODO: What does Filebeat watch for?* - FileBeat monitors changes to the log files. 
+What does Filebeat watch for?* - FileBeat monitors changes to the log files. 
 
 
-*TODO: What does Metricbeat record?* MetricBeat analyzes metrics and statistics of the file data. 
+What does Metricbeat record?* MetricBeat analyzes metrics and statistics of the file data. 
 
 
 
-The configuration details of each machine may be found below. *Note: Use
-the [Markdown Table
-Generator](http://www.tablesgenerator.com/markdown_tables) to add/remove
-values from the table*.
+The configuration details of each machine may be found below. 
 
 | NAME    |   FUNCTION |  IP ADDRESS |  OS |   
 
@@ -106,13 +107,17 @@ Only the JUMP BOX machine can accept connections from the Internet.
 Access to this machine is only allowed from the following IP addresses: 172.117.57.160 (LOCAL MACHINE)
 
 
-- *TODO: Add whitelisted IP addresses* 40.112.187.28 (LOAD BALANCER)
+Add whitelisted IP addresses
+
+40.112.187.28 (LOAD BALANCER)
 
 Machines within the network can only be accessed by PRIVATE IP ADDRESSES
 
 
-*TODO:Which machine did you allow to access your ELK VM? What was its IP
-address?* The JumpBox has access to the Elk Server. Public IP = 20.211.8.125 / Private IP 10.2.0.4
+Which machine did you allow to access your ELK VM? What was its IP
+address?
+
+The JumpBox has access to the Elk Server. Public IP = 20.211.8.125 / Private IP 10.2.0.4
 
 
 A summary of the access policies in place can be found in the table
@@ -141,12 +146,13 @@ Ansible was used to automate configuration of the ELK machine. No
 configuration was performed manually, which is advantageous because... it eliminates the possibility of human error, and conserves resources by auto-populating large numbers of files.   
 
 
-*TODO: What is the main advantage of automating configuration with
-Ansible?* The main benefit is the continuity of data 
+What is the main advantage of automating configuration with Ansible?* 
 
-The playbook implements the following tasks: - *TODO: In 3-5 bullets,
+The main benefit of automation is the continuity of data, and minimization of human error.
+
+In 3-5 bullets,
 explain the steps of the ELK installation play. E.g., install Docker;
-download image; etc.* - ... - ...
+download image; etc.
 
 	*INSTALL PYTHON3-PIP
   	*INSTALL DOCKER MODULE
@@ -165,8 +171,7 @@ The following screenshot displays the result of running `docker ps`
 after successfully configuring the ELK instance.
 
 
-![TODO: Update the path with the name of your screenshot of docker ps
-output:            images/docker_ps_output.png
+![docker_ps_output](https://user-images.githubusercontent.com/99157857/154832666-e6c2dd4a-d876-45a7-9d92-9efffe9f28c1.png)
 
 
 
@@ -229,12 +234,16 @@ filebeat-playbook.yml
 
 How do I specify
 which machine to install the ELK server on versus which to install
-Filebeat on?* - the install-elk.yml file dictates installment directions. 
+Filebeat on?
+
+The install-elk.yml file dictates installment directions. 
 
 
 
-\_Which URL do you navigate to in order to check that
-the ELK server is running? http://20.211.8.125 
+Which URL do you navigate to in order to check that
+the ELK server is running? 
+
+http://20.211.8.125 
 
 
 *As a **Bonus**, provide the specific commands the user will need to run
