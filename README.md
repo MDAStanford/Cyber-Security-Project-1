@@ -64,7 +64,7 @@ Load balancers protect against DDos attacks.
 
 What is the advantage of a jump box?
 
-The advantage of the JumpBox file is that it's a single point of entry that can be monitored and protected. 
+The advantage of the JumpBox is that it's a single point of entry that can be monitored and protected. 
 
 
  
@@ -77,10 +77,14 @@ VMs for changes to the  LOGS  and system TRAFFIC.
 
 
 
-What does Filebeat watch for?* - FileBeat monitors changes to the log files. 
+What does Filebeat watch for?
+
+FileBeat monitors changes to the log files. 
 
 
-What does Metricbeat record?* MetricBeat analyzes metrics and statistics of the file data. 
+What does Metricbeat record?
+
+MetricBeat analyzes metrics and statistics of the file data. 
 
 
 
@@ -181,23 +185,29 @@ after successfully configuring the ELK instance.
 ### Target Machines & Beats
 
 This ELK server is configured to monitor the following machines: -
-*TODO: List the IP addresses of the machines you are monitoring* 10.0.0.9 (WebVM1), 10.0.0.10 (WebVM2), 10.0.0.4 (JumpBox)
+List the IP addresses of the machines you are monitoring
+
+10.0.0.9 (WebVM1), 10.0.0.10 (WebVM2), 10.0.0.4 (JumpBox)
 
 
 
 
 We have installed the following Beats on these machines: - 
 
-*TODO:Specify which Beats you successfully installed* FileBeat and MetricBeat were successfully installed.
+Specify which Beats you successfully installed
+
+FileBeat and MetricBeat were successfully installed.
 
 These Beats allow us to collect the following information from each
 machine: - 
 
 
-*TODO: In 1-2 sentences, explain what kind of data each beat
+In 1-2 sentences, explain what kind of data each beat
 collects, and provide 1 example of what you expect to see. E.g.,
 `Winlogbeat` collects Windows logs, which we use to track user logon
-events, etc.*    FileBeat collects changes to the log files, and MetricBeat collects statistics from the operating system.   
+events, etc.
+
+FileBeat collects changes to the log files, and MetricBeat collects statistics from the operating system.   
 
 
 
@@ -247,4 +257,11 @@ http://20.211.8.125
 
 
 *As a **Bonus**, provide the specific commands the user will need to run
-to download the playbook, update the files, etc.*
+to download the playbook, update the files, etc.
+
+ssh jump@(IpAddress)
+docker run -ti container/ansible
+change dir. /etc/ansible
+ssh-keygen to your web service
+nano hosts (update IP on[webservers][elkservers]
+nano ansible.cfg (remote_user to which server you want to use)
