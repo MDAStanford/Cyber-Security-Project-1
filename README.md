@@ -1,6 +1,10 @@
 # Cyber-Security-Project-1
 PROJECT: MICROSOFT AZURE ELK STACK DESIGN & DEPLOYMENT 
 
+
+The main purpose of this network is to expose a load-balanced and monitored instance of DVWA, the D*mn Vulnerable Web Application.
+
+
 The files in this repository were used to configure the network depicted
 below.
 
