@@ -1,5 +1,5 @@
 # Cyber-Security-Project-1
-Microsoft Azure Elk Stack Design &amp; Deployment
+PROJECT: MICROSOFT AZURE ELK STACK DESIGN & DEPLOYMENT 
 
 The files in this repository were used to configure the network depicted
 below.
