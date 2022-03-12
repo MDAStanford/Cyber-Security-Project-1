@@ -3,7 +3,8 @@ PROJECT: MICROSOFT AZURE ELK STACK DESIGN & DEPLOYMENT
 
 Automated Elk Stack Deployment
 Network design on Azure Cloud: VMs, Network Security Groups, Load Balancers, subnets, and software deployment. Demonstration of a complete ELK Deployment: Elasticsearch, Logstash, and Kibana using Docker and Ansible to deploy multiple web servers and an ELK server from a Jump box.
-https://github.com/MDAStanford/Cyber-Security-Project-1
+[github](https://github.com/MDAStanford/Cyber-Security-Project-1)
+
 
 
 
